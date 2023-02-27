@@ -1,0 +1,529 @@
+/* GENERALE */
+#ic{
+    display: none;
+}
+
+body {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    font-size: 16px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+#pagina {
+    max-width: 1000px;
+    max-height: 450px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+#logo {
+    width: 250px;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid white;
+    height: 60px;
+    width: 200px;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #0ff;
+    color: black;
+    filter: drop-shadow(5px 5px 50px #0ff);
+}
+
+/*WELCOME*/
+#matteo {
+    text-align: left;
+}
+
+#welcome-heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+#welcome-heading>p {
+    font-weight: 600;
+}
+
+#welcome-main>h2 {
+    color: rgb(202, 71, 202);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+
+#instructions-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+ul {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    list-style-type: disc;
+    color: white;
+}
+
+ul>li {
+    margin-bottom: 8px;
+    margin-left: 30px;
+}
+
+li>span {
+    font-weight: bold;
+}
+
+#welcome-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#welcome-footer span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#welcome-footer button {
+    margin-right: 16%;
+}
+
+#proceed {
+    color: white;
+    text-decoration: none;
+}
+
+#proceed:hover {
+    color: black;
+}
+
+
+
+/*TEST*/
+
+.exambox {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+h1 p {
+    font-weight: bold;
+}
+
+#question {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.answer-buttons {
+    width: 380px;
+    margin: 0.8rem;
+    max-width: 400px;
+    border-radius: 30px;
+    
+}
+.answer-buttons.selected{
+    background-color:  #d20094;
+    color: white;
+    filter: drop-shadow(5px 5px 50px #0ff);
+}
+
+.firstrow {
+    margin-bottom: 20px;
+}
+
+.secondrow {
+    align-items: stretch;
+
+}
+
+#il-bottone-dei-bottoni {
+    text-align: center;
+    margin: 50px;
+}
+
+.counter {
+    text-align: center;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+/*TIMER*/
+
+.rolex {
+    display: grid;
+    margin-left: auto;
+    margin-right: 0;
+    width: 100px;
+    height: 100px;
+    font-family: 'Outfit', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    align-items: center;
+}
+
+.rolex::after {
+    grid-column: 1;
+    grid-row: 1;
+    place-self: center;
+}
+
+
+/* .rolexSvg {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.rolexC{
+    fill: none;
+    stroke: silver;
+}
+
+.rolexC + .rolexC {
+    transform: rotate(-90deg);
+    stroke-linecap: round;
+    stroke: #00ffff;
+    animation: arc 40s linear infinite;
+    animation-name: arc, col;
+} */
+
+
+/*keyframes per cambio colore del timer*/
+
+/* @keyframes arc {
+    0% {
+        stroke-dashoffset: 0px;
+    }
+}
+
+@keyframes col {
+    0% {
+        stroke: #00ffff;
+    }
+
+    25% {
+        stroke: #00ffff;
+    }
+
+    50% {
+        stroke: #00ffff;
+    }
+
+    75% {
+        stroke: #d21212;
+    }
+
+    100% {
+        stroke: #d21212;
+    }
+} */
+
+/*RESULT*/
+
+#titolone {
+    line-height: 2rem;
+    margin-bottom: 0;
+}
+
+#title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+}
+
+#underTitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+#correct, #wrong {
+    line-height: 3rem;
+}
+
+#correctTitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#wrongTitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#correctPercentage {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#wrongPercentage {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#correctQuestions {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#wrongQuestions {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#centerMessage {
+    text-align: center;
+}
+
+#checkAnswers {
+    text-align: center;
+}
+
+#middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#message {
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-family: 'Outfit', sans-serif;
+    line-height: 2rem;
+    position: absolute;
+    top:200px;
+    left: 315px;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+}
+
+#topMessage {
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+}
+
+#middleMessage {
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: 'Outfit', sans-serif;
+    color: #00ffff;
+}
+
+#underMessage {
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-family: 'Outfit', sans-serif;
+    padding-top: 15px;
+}
+
+#progress-ring {
+    width: 650px;
+    height: 650px;
+}
+
+#progress-ring__circle {
+    transition: 0.35s stroke-dashoffset;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke: #00ffff;
+    stroke-width: 65px;
+    fill: transparent;
+}
+
+
+.percentuale {
+    height: 40px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+}
+
+#epicode-link {
+    text-decoration: none;
+    color: white;
+}
+
+/*FEEDBACK*/
+.containar_principale {
+    padding: 10px;
+    margin: 15px 0 15px 0;
+}
+
+#titolo {
+    display: flex;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 2.3em;
+}
+
+#paragrafo {
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    margin-top: 15px;
+}
+
+.containar_stelle {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.stella {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 5px 0 5px;
+    fill: black;
+}
+
+.active{
+    fill:#00ffff
+}
+
+.paragrafo_footer {
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+    font-size: 1.2em;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.containar_input {
+    display: flex;
+    justify-content: center;
+}
+
+.input_footer {
+    height: 1.8em;
+    width: 70em;
+    background: none;
+    border: none;
+    border-bottom: solid 2px #d20094;
+    color: white;
+    margin: 10px 0 50px 0;
+    font-size: 1.2em;
+    font-family: 'Outfit', sans-serif;
+}
+
+.input_footer:focus {
+    outline: none;
+}
+
+#welcome-button {
+    display: flex;
+    justify-content: center;
+}
+
+#btn-to-welcome {
+    text-align: center;
+}
+.grandezza{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 0 0 0 0;
+    fill: #00ffff;
+}
+
+
+/*CheckAnswers Popup */
+#popup {
+    background-color: white;
+    height: 500px;
+    width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%
+}
+
+#popupTitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px;
+    color: black;
+}
+
+#fullQuestions {
+    display: flex;
+    padding: 40px;
+    border: 1px solid gainsboro;
+}
+
+#qs {
+    display: flex;
+    justify-content: flex-start;
+    
+}
